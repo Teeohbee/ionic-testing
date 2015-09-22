@@ -1,4 +1,3 @@
-var karma = require('karma')
 var gulp = require('gulp');
 var gutil = require('gulp-util');
 var bower = require('bower');
@@ -7,6 +6,7 @@ var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
+var karma = require('karma').server;
 
 var paths = {
   sass: ['./scss/**/*.scss']
